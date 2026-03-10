@@ -7,9 +7,11 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { getPhotos} from "@/sanity/lib/getPhotos"
 import { getProfile } from "@/sanity/lib/getProfile"
+export const revalidate = 60; // Revalida la página cada 60 segundos
 
 export default async function Home() {
   // Ejecutamos ambas peticiones en paralelo para mayor velocidad
+  
   const [photos, profile] = await Promise.all([
     getPhotos(),
     getProfile()
