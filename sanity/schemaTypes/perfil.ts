@@ -1,7 +1,7 @@
 // sanity/schemaTypes/perfil.ts
 export const perfil = {
   name: 'perfil',
-  title: 'Perfil y Contacto',
+  title: 'Fotos de Perfil y Contacto',
   type: 'document',
   fields: [
     {
@@ -11,21 +11,10 @@ export const perfil = {
       options: { hotspot: true },
     },
     {
-      name: 'biografia',
-      title: 'Biografía / Descripción',
-      type: 'text', // Para que pueda escribir varios párrafos
-    },
-    {
       name: 'imagenesContacto',
-      title: 'Fotos de la sección Contacto (Grid)',
+      title: 'Fotos para el grid de Contacto (Máximo 6)',
       type: 'array',
       of: [{ type: 'image', options: { hotspot: true } }],
-      validation: (Rule: any) => Rule.max(6), // Para que no rompa el diseño
     },
-    {
-      name: 'instagramUser',
-      title: 'Usuario de Instagram',
-      type: 'string',
-    }
   ],
 }
