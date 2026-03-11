@@ -1,5 +1,7 @@
+"use client"
+
 import Link from "next/link"
-import { Instagram, Facebook, Mail } from "lucide-react"
+import { Instagram, Linkedin, Globe, Code2 } from "lucide-react"
 
 const navItems = [
   { label: "Inicio", href: "#inicio" },
@@ -10,9 +12,7 @@ const navItems = [
 ]
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com/tuusuario", label: "Instagram" },
-  { icon: Facebook, href: "https://facebook.com/tuusuario", label: "Facebook" },
-  { icon: Mail, href: "mailto:hola@estudiofoto.com", label: "Email" },
+  { icon: Instagram, href: "https://instagram.com/ludmiavila.g", label: "Instagram" }
 ]
 
 export function Footer() {
@@ -22,10 +22,10 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <Link href="#inicio" className="font-serif text-2xl tracking-tight">
-              Estudio<span className="font-light">Foto</span>
+              <span className="font-light">Ludmila Avila Gioia</span>
             </Link>
             <p className="mt-4 text-background/70 text-sm leading-relaxed">
-              Fotografía profesional que captura la esencia de tus momentos más especiales.
+              Fotografía y creativa visual. Potenciando la esencia de marcas a través de una mirada estratégica y estética.
             </p>
           </div>
 
@@ -64,12 +64,45 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-background/50">
-            © {new Date().getFullYear()} EstudioFoto. Todos los derechos reservados.
+          <p className="text-xs tracking-widest text-background/50 uppercase">
+            © {new Date().getFullYear()} Ludmila Avila G.
           </p>
-          <p className="text-sm text-background/50">
-            Diseñado con pasión por la fotografía
-          </p>
+          
+          {/* Tu Firma de Desarrollador */}
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <span className="text-xs tracking-widest text-background/30 uppercase flex items-center gap-2">
+              <Code2 size={14} /> Desarrollado por Tomas Aguilar
+            </span>
+            <div className="flex gap-4">
+              <a 
+                href="https://www.linkedin.com/in/tomas-aguilar-dev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-background/50 hover:text-background transition-colors"
+                title="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </a>
+              <a 
+                href="https://www.instagram.com/dev.aguilar" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-background/50 hover:text-background transition-colors"
+                title="Instagram"
+              >
+                <Instagram size={18} />
+              </a>
+              <a 
+                href="https://tomas-aguilar-portolio.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-background/50 hover:text-background transition-colors"
+                title="Portfolio"
+              >
+                <Globe size={18} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
