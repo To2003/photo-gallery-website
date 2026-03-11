@@ -33,7 +33,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="#inicio" className="font-serif text-2xl tracking-tight text-foreground">
-            Estudio<span className="font-light">Foto</span>
+            <span className="font-light">Ludmila Avila Gioia</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Estudio Fotografía | Capturando Momentos',
+  title: 'Ludmila Avila G | Capturando Momentos',
   description: 'Fotografía profesional para bodas, retratos, eventos y más. Transformamos tus momentos especiales en recuerdos eternos.',
   generator: 'v0.app',
   icons: {

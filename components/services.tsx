@@ -1,11 +1,11 @@
-import { Camera, Heart, Users, Package } from "lucide-react"
+import { Camera, Users, Package, Utensils } from "lucide-react"
 
 const services = [
   {
-    icon: Heart,
-    title: "Bodas",
-    description: "Capturo cada momento mágico de tu día especial. Desde los preparativos hasta el último baile.",
-    features: ["Cobertura completa", "Álbum digital", "Fotos editadas"],
+    icon: Utensils,
+    title: "Gastronomía",
+    description: "Resalto la textura, frescura y el arte de cada plato. Fotografía diseñada para despertar el apetito y elevar tu marca culinaria.",
+    features: ["Estilismo de alimentos", "Iluminación de estudio", "Contenido para redes"],
   },
   {
     icon: Camera,

@@ -2,9 +2,9 @@ import Image from "next/image"
 import { urlFor } from "@/sanity/lib/image"
 
 const stats = [
-  { number: "500+", label: "Sesiones" },
+  { number: "200+", label: "Sesiones" },
   { number: "8", label: "Años de experiencia" },
-  { number: "200+", label: "Bodas" },
+  { number: "200+", label: "Proyectos" }, // Cambié "Bodas" por "Proyectos" para que pegue más con su nuevo perfil
   { number: "100%", label: "Clientes felices" },
 ]
 
@@ -17,33 +17,32 @@ export function About({ data }: { data: any }) {
             {data?.fotoSobreMi ? (
               <Image
                 src={urlFor(data.fotoSobreMi).width(800).url()}
-                alt="Fotógrafo"
+                alt="Ludmila Avila Gioia"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             ) : (
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground">Cargando imagen...</div>
+              <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                Cargando imagen...
+              </div>
             )}
           </div>
 
           <div>
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Sobre Mí</p>
             <h2 className="font-serif text-4xl md:text-5xl font-light tracking-tight text-foreground mb-8">
-              La persona detrás de la cámara
+              La visión detrás del lente
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Soy una fotógrafa apasionada con más de 8 años de experiencia capturando momentos únicos.
-                Mi enfoque combina técnica profesional con un estilo artístico que hace que cada imagen cuente una historia.
+                Soy Ludmila, fotógrafa y creativa visual. Para mí, cada producto tiene un estilo propio y mi trabajo es hacerlo brillar. No me ato a un único estilo: me ajusto a la esencia de cada marca y la potencio con mi mirada estratégica.
               </p>
               <p>
-                Creo que la mejor fotografía nace de la conexión genuina con las personas.
-                Por eso me tomo el tiempo de conocer a mis clientes, entender su visión y crear un ambiente relajado donde la magia sucede naturalmente.
+                Mi experiencia comenzó en el sector gastronómico, pero mi verdadera pasión reside en el universo de la moda, el diseño y el beauty. Alterno entre producciones para clientes y proyectos personales, convencida de que la búsqueda estética constante es lo que marca la diferencia.
               </p>
               <p>
-                Ya sea una boda íntima, un retrato corporativo o un evento especial, mi objetivo es siempre el mismo:
-                crear imágenes que emocionen y perduren en el tiempo.
+                Mi objetivo es crear imágenes de impacto inmediato, donde la fotografía no sea solo un recurso, sino una herramienta de posicionamiento. Combino técnica en Photoshop y Lightroom con dirección de arte para lograr resultados que, simplemente, se noten distintos.
               </p>
             </div>
 
